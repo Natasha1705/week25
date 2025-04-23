@@ -1,0 +1,76 @@
+.practice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.word-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+/* .word-card:hover {
+  transform: scale(1.05); 
+} */
+
+.card-back {
+  display: none; 
+}
+
+.word-card.revealed .card-back {
+  display: block; 
+}
+
+.show-translation-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.show-translation-btn:hover {
+  background-color: #0056b3; 
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%; 
+}
+
+.nav-btn {
+  padding: 10px 15px;
+  background-color: #28a745; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #218838; 
+}
+
+.counter {
+  font-weight: bold;
+  font-size: 1.2em; 
+}
+
+.error-message {
+  color: red;
+  font-size: 1.5em; 
+  text-align: center;
+}
