@@ -18,7 +18,6 @@ function WordList({ words }) {
 
   // Обработчик сохранения
   const handleSave = (id) => {
-    // Здесь должна быть логика сохранения изменений
     console.log('Сохранение слова:', id, editedWord);
     setEditingId(null);
   };
@@ -32,7 +31,6 @@ function WordList({ words }) {
   // Обработчик добавления нового слова
   const handleAddWord = () => {
     if (newWord.word && newWord.translation) {
-      // Здесь должна быть логика добавления слова
       console.log('Добавление нового слова:', newWord);
       setNewWord({ word: '', transcription: '', translation: '' });
     }

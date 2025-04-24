@@ -1,10 +1,8 @@
-
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import AppLayout from './components/AppLayout/AppLayout';
 import WordList from './components/WordList/WordList';
-import WordPractice from './components/WordPractice/WordPractice'; // Импортируем WordPractice
+import WordPractice from './components/WordPractice/WordPractice';
 import words from './data.json';
 import './App.css';
 
@@ -24,7 +22,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<WordList words={words} />} />
-          <Route path="/practice" element={<WordPractice words={words} />} /> {/* Используем WordPractice */}
+          <Route path="/practice" element={<WordPractice words={words} />} /> 
         </Routes>
       </AppLayout>
     </Router>
